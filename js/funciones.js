@@ -16,18 +16,18 @@ function hola() {
 
 function changeColor() {
     mensage = document.getElementById("msn");
-
     
     var rubrik = document.getElementById('title');
     mensage.innerHTML = '<button type="" class="button" value="" onclick="changeColorBack();">click here</button></br> <h3>the console is cyan</h3>';
+    mensage.style.backgroundColor= 'blue';
     console.log('\x1b[36m%s\x1b[0m', 'I am cyan');
 }
 function changeColorBack() {
     mensage = document.getElementById("msn");
-
     
     var rubrik = document.getElementById('title');
     mensage.innerHTML = '<button type="" class="button" value="" onclick="changeColor();">click here</button></br> <h3>the console is white</h3>';
+    mensage.style.backgroundColor= 'white';
     console.log('\x1b[0m', 'I am White');
 }
 
